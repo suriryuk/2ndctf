@@ -20,7 +20,7 @@
                 $password = $_POST['password'];
                 
                 if(isset($password)){
-                        if($password == 'password_checker_admin_password_is_not_safed!!'){
+                        if(md5($password) == '9c088ebbcce8fff156318c7b12a8ca5f'){
                                 echo 'Congrats the flag is 2ndCTF{'.$password.'}';
                         }
                         echo 'Invaild password!';
